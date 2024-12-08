@@ -1,8 +1,14 @@
 import React, { useState } from 'react';
 import './FeedbackForm.css'; // Import CSS for styling
+import React, { useState } from 'react';
 
 const FeedbackForm = () => {
-
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    feedback: ''
+  });
+  
   return (
     <>
     <nav>
